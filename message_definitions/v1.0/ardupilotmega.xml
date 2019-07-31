@@ -246,6 +246,16 @@
         <param index="1" label="battery mask">Bitmask of batteries to reset. Least significant bit is for the first battery.</param>
         <param index="2" label="percentage" minValue="0" maxValue="100" increment="1">Battery percentage remaining to set.</param>
       </entry>
+      <entry value="2900" name="MAV_CMD_DO_SET_SAILBOAT_THROTTLE_STATE" hasLocation="false" isDestination="false">
+        <description>Request change of sailboat throttle state</description>
+        <param index="1" label="State" enum="SAILBOAT_THROTTLE_STATE">The target sailboat throttle state</param>
+        <param index="2">Empty.</param>
+        <param index="3">Empty.</param>
+        <param index="4">Empty.</param>
+        <param index="5">Empty.</param>
+        <param index="6">Empty.</param>
+        <param index="7">Empty.</param>
+      </entry>
     </enum>
     <!-- AP_Limits Enums -->
     <enum name="LIMITS_STATE">
@@ -933,6 +943,12 @@
       <entry value="6" name="DEEPSTALL_STAGE_LAND">
         <description>Stalling and steering towards the land point.</description>
       </entry>
+    </enum>
+      <enum name="SAILBOAT_THROTTLE_STATE">
+      <description >Sailboat throttle state</description>
+      <entry value="0" name="NEVER"/>
+      <entry value="1" name="ASSIST"/>
+      <entry value="2" name="FORCE_MOTOR "/>
     </enum>
     <enum name="PLANE_MODE">
       <description>A mapping of plane flight modes for custom_mode field of heartbeat.</description>

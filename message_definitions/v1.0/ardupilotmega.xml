@@ -1513,6 +1513,10 @@
      <field type="float"   name="cylinder_head_temperature" units="degC">cylinder_head_temperature (degC)</field>
      <field type="float"   name="ignition_timing" units="deg">Ignition timing for cylinder i (Crank Angle degrees)</field>
      <field type="float"   name="injection_time" units="ms">Injection time for injector i (ms)</field>
+     <extensions/>
+     <field type="float"   name="fuel_pressure" units="kPa">fuel pressure (kPa)</field>
+     <field type="float"   name="oil_pressure" units="kPa">engine oil pressure (degC)</field>
+     <field type="float"   name="oil_temperature" units="degC">engine oil temperature (degC)</field>
    </message>
     <message id="226" name="RPM">
       <description>RPM sensor output.</description>

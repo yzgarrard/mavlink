@@ -5111,6 +5111,11 @@
       <field type="uint32_t" name="discharge_maximum_burst_current" units="mA">Maximum pack discharge burst current. 0: field not provided.</field>
       <field type="char[11]" name="manufacture_date">Manufacture date (DD/MM/YYYY) in ASCII characters, 0 terminated. All 0: field not provided.</field>
     </message>
+    <message id="371" name="BATTERY_EXTENDED_STATUS">
+      <description>More Battery information; additional lower-bandwidth information about a battery</description>
+      <field type="uint8_t" name="id" instance="true">Battery ID.  Corresponds to BATTERY_STATUS.id</field>
+      <field type="float" name="internal_resistance" units="ohm">Battery's estimated total internal resistance</field>
+    </message>
     <message id="373" name="GENERATOR_STATUS">
       <description>Telemetry of power generation system. Alternator or mechanical generator.</description>
       <field type="uint64_t" name="status" display="bitmask" enum="MAV_GENERATOR_STATUS_FLAG">Status flags.</field>
